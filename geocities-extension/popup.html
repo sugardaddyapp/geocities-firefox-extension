@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>GeoCities Time Machine</title>
+  <style>
+    body {
+      width: 280px;
+      font-family: "Comic Sans MS", cursive;
+      background: #000080;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    .title-bar {
+      background: linear-gradient(to right, #000080, #1084d0);
+      padding: 6px 10px;
+      font-size: 13px;
+      font-weight: bold;
+      border-bottom: 2px solid #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .title-bar span { flex: 1; }
+    .content {
+      padding: 12px;
+      background: #c0c0c0;
+      color: #000000;
+    }
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      padding: 6px 8px;
+      background: #ffffff;
+      border: 2px inset #888;
+    }
+    .toggle-label { font-size: 13px; font-weight: bold; }
+    .toggle-btn {
+      padding: 4px 14px;
+      font-family: "Comic Sans MS", cursive;
+      font-size: 12px;
+      cursor: pointer;
+      border: 2px outset #ffffff;
+      background: #c0c0c0;
+      font-weight: bold;
+    }
+    .toggle-btn:active { border-style: inset; }
+    .toggle-btn.on { background: #00aa00; color: #ffffff; }
+    .toggle-btn.off { background: #cc0000; color: #ffffff; }
+    .section-label {
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      color: #000080;
+    }
+    .themes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    .theme-btn {
+      padding: 8px 4px;
+      font-family: "Comic Sans MS", cursive;
+      font-size: 11px;
+      font-weight: bold;
+      cursor: pointer;
+      border: 2px outset #ffffff;
+      text-align: center;
+    }
+    .theme-btn:active { border-style: inset; }
+    .theme-btn.active { border-style: inset; box-shadow: inset 1px 1px 3px rgba(0,0,0,0.5); }
+    .theme-neon   { background: #000000; color: #00ff00; border-color: #ff00ff; }
+    .theme-space  { background: #000033; color: #ccccff; border-color: #00ffff; }
+    .theme-candy  { background: #ff69b4; color: #ffffff; border-color: #ffff00; }
+    .theme-forest { background: #003300; color: #ccffcc; border-color: #99ff99; }
+    .theme-win95  { background: #008080; color: #ffffff; border-color: #c0c0c0; }
+    .extras {
+      border: 2px inset #888;
+      background: #ffffff;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+    .extras label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      margin-bottom: 4px;
+      cursor: pointer;
+    }
+    .footer {
+      text-align: center;
+      font-size: 10px;
+      color: #555;
+      padding-top: 4px;
+      border-top: 1px solid #888;
+    }
+    .blink { animation: blink 1s step-end infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+</head>
+<body>
+  <div class="title-bar">
+    <span>🌐 GeoCities Time Machine</span>
+  </div>
+  <div class="content">
+    <div class="toggle-row">
+      <span class="toggle-label">GeoCities Mode</span>
+      <button class="toggle-btn off" id="toggleBtn">OFF</button>
+    </div>
+
+    <div class="section-label">Choose Theme:</div>
+    <div class="themes">
+      <button class="theme-btn theme-neon active" data-theme="neon">⚡ Neon</button>
+      <button class="theme-btn theme-space" data-theme="space">🚀 Space</button>
+      <button class="theme-btn theme-candy" data-theme="candy">🍬 Candy</button>
+      <button class="theme-btn theme-forest" data-theme="forest">🌲 Forest</button>
+      <button class="theme-btn theme-win95" data-theme="win95" style="grid-column: span 2;">🖥️ Windows 95</button>
+    </div>
+
+    <div class="section-label">Extras:</div>
+    <div class="extras">
+      <label><input type="checkbox" id="chkMarquee" checked> Scrolling marquee</label>
+      <label><input type="checkbox" id="chkCounter" checked> Visitor counter</label>
+      <label><input type="checkbox" id="chkSparkle" checked> Cursor sparkles</label>
+      <label><input type="checkbox" id="chkBlink" checked> Blink tags</label>
+    </div>
+
+    <div class="footer"><span class="blink">★</span> Best viewed in Netscape Navigator <span class="blink">★</span></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
