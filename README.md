@@ -2,7 +2,7 @@
 
 > Transform any modern website into a glorious 1990s GeoCities masterpiece — complete with neon text, scrolling marquees, visitor counters, and cursor sparkles.
 
-A Firefox extension by [Best Sugar Daddy App](https://bestsugardaddyapps.com)
+A Firefox extension by [Best Sugar Daddy Apps](https://bestsugardaddyapps.com)
 
 ---
 
@@ -50,7 +50,7 @@ Classic teal desktop background. Black text on grey surfaces, navy blue headings
 
 ### Option A — Firefox Add-ons (Permanent)
 
-1. Go to the [extension listing on addons.mozilla.org](#) *(link coming soon)*
+1. Go to the [extension listing on addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/geocities-time-machine/)
 2. Click **Add to Firefox**
 3. Confirm the permissions prompt
 4. The 🌐 icon appears in your Firefox toolbar
@@ -153,4 +153,13 @@ MIT — do whatever you want with it. Just don't remove the visitor counter. The
 
 ---
 
+## Other Projects
+
+Also checkout my other projects:
+[Geocities Boilerplate](https://github.com/sugardaddyapp/geocities-boilerplate/)
+[NPM create-geocities-app](https://www.npmjs.com/package/create-geocities-app)
+[Best Sugar Daddy Apps 2026](https://bestsugardaddyapps.com/)
+[Best Sugar Daddy App](https://hanker.app)
+
+---
 *Best viewed in Netscape Navigator 4.0 at 800×600 resolution.*
